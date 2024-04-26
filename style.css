@@ -1,93 +1,120 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: #000; /* cor de fundo do corpo */
+    background: #f5f5f5; /* Fundo mais claro */
+    font-family: 'Poppins', sans-serif;
 }
 
 .cabecalho {
-    position: relative; /* Necessário para que .stars seja posicionado em relação a ele */
-    background: #000; /* cor de fundo do cabeçalho */
+    position: relative;
+    background: #ff0019; /* Vermelho mais escuro */
+    padding: 20px 0;
 }
 
 .stars {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Preenche toda a largura do cabeçalho */
-    height: 100px; /* Altura do cabeçalho */
-    background: url('pngtree-d-illustration-nasa-provides-elements-for-a-mesmerizing-night-sky-background-image_13558871.png'); /* Substitua 'stars-background.jpg' pelo caminho da sua imagem de fundo estrelado */
+    width: 100%;
+    height: 100px;
+    background: none; /* Removendo o fundo estrelado */
     z-index: -1;
-    opacity: 0.7; /* Opacidade para não obscurecer o texto */
 }
 
 .cabecalho-imagem {
-    width: 10%;
+    width: 200px; /* Tamanho fixo da logo */
+}
+
+.cabecalho-lista {
+    list-style: none;
+    margin-top: 10px;
 }
 
 .cabecalho-lista-item {
     display: inline-block;
-    margin: 0 16px;
-    font-size: 16px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ffffff; /* Texto branco */
 }
 
-.escola-imagem {
-    width: 25%;
-}
-
-.escola {
-    background-image: linear-gradient(#424E61, #16CFF8);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.escola-div-conteudo {
-    width: 35%;
-}
-
-.escola-titulo {
-    padding: 24px 0;
-}
-
-.estudante {
-    padding: 24px 0;
-}
-
-.estudante-imagem {
-    width: 120px;
-}
-
-.estudante-icone {
-    width: 24px;
-    padding: 4px 8px;
-}
-
-.estudante-div {
-    text-align: center;
-    padding: 16px 0;
-}
-
-.estudante-titulo {
-    text-align: center;
+.destaque {
+    background: #ffffff; /* Fundo branco */
+    color: #212529; /* Texto mais escuro */
     padding: 50px 0;
+    text-align: center;
 }
 
-.estudante-todos {
+.destaque-titulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destaque-texto-um {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.destaque-texto-dois {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.destaque-corridas-titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.destaque-corridas-lista {
+    list-style: none;
+}
+
+.destaque-corridas-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.destaque-imagem {
+    width: 700px;
+    margin-top: 20px;
+}
+
+.equipes-titulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.equipes-lista {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.equipe-logo {
+    width: 100%;
+}
+
+.equipe-nome {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.equipe-descricao {
+    font-size: 16px;
+    color: #6c757d; /* Cor de texto mais escura */
 }
 
 .rodape {
-    background-color: black;
+    background-color: #ff0019; /* Vermelho mais escuro */
     text-align: center;
+    padding: 20px 0;
 }
 
 .rodape-imagem {
-    height: 60px;
-    padding: 12px 0;
+    height: 80px; /* Tamanho menor da logo no rodapé */
 }
