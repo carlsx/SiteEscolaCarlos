@@ -117,4 +117,16 @@ body {
 
 .rodape-imagem {
     height: 80px; /* Tamanho menor da logo no rodapé */
+}.equipe-logo{
+    width: 250px; /* Defina a largura desejada */
+    /* OU */
+    height: 200px; /* Defina a altura desejada */
+}
+.icon {
+    cursor: pointer;
+    font-size: 24px; /* Tamanho do ícone */
+    margin-left: 10px; /* Espaçamento entre o ícone e os outros elementos */
+}
+.calendario-oculto {
+    display: none;
 }
