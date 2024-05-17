@@ -15,20 +15,186 @@
         <div class="stars"></div> <!-- Fundo estrelado apenas no cabeçalho -->
         <img class="cabecalho-imagem" src="F1.svg.png" alt="Formula 1 Logo">
         <ul class="cabecalho-lista">
-            <li class="cabecalho-lista-item"><span class="link-corridas">Corridas</span></li>
+            <li class="cabecalho-lista-item" id="link-corridas">Corridas</li>
             <li class="cabecalho-lista-item">Pilotos</li>
             <li class="cabecalho-lista-item">Equipes</li>
         </ul>
         <div id="calendario" class="calendario-oculto">
-            <div id="calendario" class="calendario-oculto">
                 <h3>Calendário de Corridas</h3>
-                <ul>
-                    <li>10 de Maio - Grande Prêmio do Brasil/Interlagos - São Paulo</li>
-                    <li>24 de Maio - Grande Prêmio de Silverstone- Londres</li>
-                    <li>7 de Junho - Grande Prêmio de Mônaco - Monte Carlo</li>
-                    <!-- Adicione mais eventos conforme necessário -->
-                </ul>
-            </div>            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Circuito</th>
+                            <th>Dias</th>
+                            <th>Horário</th>
+                            <th>Vencedor</th> <!-- Novo campo para o vencedor -->
+                            <td>Video</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GP do Bahrein</td>
+                            <td>Circuito Internacional do Bahrein</td>
+                            <td>29/02 a 02/03*</td>
+                            <td>12h</td>
+                            <td>Max Verstappen<td>
+                                <td><a href="https://youtu.be/9Y5wMpKXNK4?si=31dhGMiCjUD6-umN">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP da Arábia Saudita</td>
+                            <td>Circuito Jeddah Corniche</td>
+                            <td>07/03 a 09/03*</td>
+                            <td>14h</td>
+                            <td>Max Verstappen<td>
+                                <td><a href="https://youtu.be/OJ56MAGFPGM?si=SUk70IPyzMk2jDBU">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP da Austrália</td>
+                            <td>Circuito de Albert Park</td>
+                            <td>22/03 a 24/03</td>
+                            <td>1h</td>
+                            <td>Carlos Sainz</td>
+                            <td><a href="https://youtu.be/9z8sEadieXA?si=AGrUumbDk9wRCLFI">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP do Japão</td>
+                            <td>Circuito de Suzuka</td>
+                            <td>05/04 a 07/04</td>
+                            <td>2h</td>
+                            <td>Max Verstappen</td>
+                            td><a href="https://youtu.be/Z3-IulIyBtU?si=LIrjSZT_L6pmqwQe">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP da China</td>
+                            <td>Circuito Internacional de Xangai</td>
+                            <td>19/04 a 21/04</td>
+                            <td>4h</td>
+                            <td>Max Verstappen</td>
+                            td><a href="https://youtu.be/hh4prBn66Dc?si=p9NVKaEPUbhqvD4-">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP de Miami</td>
+                            <td>Autódromo Internacional de Miami</td>
+                            <td>03/05 a 05/05</td>
+                            <td>17h</td>
+                            <td>Lando norris</td>
+                            td><a href="https://youtu.be/9wiQqcKUahc?si=5ks6MglELOdzg5C9">Veja mais</a></td>
+                        </tr>
+                        <tr>
+                            <td>GP da Emilia-Romagna</td>
+                            <td>Autódromo Enzo e Dino Ferrari</td>
+                            <td>17/05 a 19/05</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP de Mônaco</td>
+                            <td>Circuito de Monte Carlo</td>
+                            <td>24/05 a 26/05</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP do Canadá</td>
+                            <td>Circuito Gilles Villeneuve</td>
+                            <td>07/06 a 09/06</td>
+                            <td>15h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Espanha</td>
+                            <td>Circuito de Barcelona-Catalunha</td>
+                            <td>21/06 a 23/06</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Áustria</td>
+                            <td>Circuito RB Ring</td>
+                            <td>28/06 a 30/06</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Inglaterra</td>
+                            <td>Circuito de Silverstone</td>
+                            <td>05/07 a 07/07</td>
+                            <td>11h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Hungria</td>
+                            <td>Circuito Hungaroring</td>
+                            <td>19/07 a 21/07</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Bélgica</td>
+                            <td>Circuito de Spa-Francorchamps</td>
+                            <td>26/07 a 28/07</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Holanda</td>
+                            <td>Circuito de Zandvoort</td>
+                            <td>23/08 a 25/08</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP da Itália</td>
+                            <td>Autódromo Nacional de Monza</td>
+                            <td>30/08 a 01/09</td>
+                            <td>10h</td>
+                        </tr>
+                        <tr>
+                            <td>GP do Azerbaijão</td>
+                            <td>Circuito de Baku</td>
+                            <td>13/09 a 15/09</td>
+                            <td>8h</td>
+                        </tr>
+                        <tr>
+                            <td>GP de Singapura</td>
+                            <td>Circuito de Marina Bay</td>
+                            <td>20/09 a 22/09</td>
+                            <td>9h</td>
+                        </tr>
+                        <tr>
+                            <td>GP dos Estados Unidos</td>
+                            <td>Circuito das Américas</td>
+                            <td>18/10 a 20/10</td>
+                            <td>16h</td>
+                        </tr>
+                        <tr>
+                            <td>GP do México</td>
+                            <td>Autódromo Hermanos Rodríguez</td>
+                            <td>27/10 a 27/10</td>
+                            <td>17h</td>
+                        </tr>
+                        <tr>
+                            <td>GP de São Paulo</td>
+                            <td>Autódromo José Carlos Pace (Interlagos)</td>
+                            <td>01/11 a 03/11</td>
+                            <td>14h</td>
+                        </tr>
+                        <tr>
+                            <td>GP de Las Vegas</td>
+                            <td>Circuito de Las Vegas</td>
+                            <td>21/11 a 23/11*</td>
+                            <td>3h</td>
+                        </tr>
+                        <tr>
+                            <td>GP do Catar</td>
+                            <td>Circuito Internacional de Lusail</td>
+                            <td>29/11 a 01/12</td>
+                            <td>14h</td>
+                        </tr>
+                        <tr>
+                            <td>GP de Abu Dhabi</td>
+                            <td>Circuito de Yas Marina</td>
+                            <td>06/12 a 08/12</td>
+                            <td>10h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+                <!-- Adicione mais eventos conforme necessário -->
+            </ul>
         </div>
     </header>
     </header>    
@@ -83,7 +249,8 @@
             </div>
             <div class="equipe">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Aston_Martin_F1_Team.jpg" alt="Logo da Aston Martin Cognizant F1 Team" class="equipe-logo">
-                <h3 class="equipe-nome">Aston Martin Cognizant F1 Team</h3>
+                <h3 class="equi
+            </ul>pe-nome">Aston Martin Cognizant F1 Team</h3>
                 <p class="equipe-descricao">A Aston Martin Cognizant F1 Team é uma equipe britânica de Fórmula 1 que representa o luxo e a elegância no esporte.</p>
             </div>
             <div class="equipe">
@@ -104,7 +271,7 @@
             <header class="header">
                 <div class="stars"></div> <!-- Fundo estrelado apenas no cabeçalho -->
                 <nav class="nav">
-                    <img class="logo" src="F1.svg.png" alt="Formula 1 Logo">
+                    <img class="Fundo" src="F1.svg.png" alt="Formula 1 Logo">
                     <ul class="nav-list">
                         <li class="nav-item">Corridas</li>
                         <li class="nav-item">Pilotos</li>
@@ -120,6 +287,6 @@
         <img class="rodape-imagem" src="formula1-logo.png" alt="Formula 1 Logo">
     </footer>
 
-    <script src="script.js"></script>
+    <script src="icones.js"></script>
 </body>
 </html>
